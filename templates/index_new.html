@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск достопримечательностей</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Оставляем код поиска без изменений
+            $('#query').on('input', function () {
+                var query = $(this).val().toLowerCase();
+                $.ajax({
+                    type: 'POST',
+                    url: '/search',
+                    data: { query: query },
+                    success: function (data) {
+                        var resultsHtml = '';
+                        if (data.length > 0) {
+                            for (var i = 0; i < data.length; i++) {
+                                if (data[i].type === 'attraction') {
+                                    resultsHtml += '<li class="attractionResult" data-city="' + data[i].city + '" data-attraction="' + data[i].attraction + '">' +
+                                        data[i].attraction + ' в ' + data[i].city + '</li>';
+                                }
+                            }
+                        } else {
+                            resultsHtml += '<li>Ничего не найдено.</li>';
+                        }
+                        $('#searchResults').html(resultsHtml);
+                    }
+                });
+            });
+
+            $('#searchForm').submit(function (e) {
+                e.preventDefault();
+            });
+
+            $('#searchResults').on('click', '.attractionResult', function () {
+                var city = $(this).data('city');
+                var attraction = $(this).data('attraction');
+                window.location.href = '/attraction/' + city + '/' + attraction;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Поиск достопримечательностей</h1>
+        <form id="searchForm">
+            <label for="query">Введите название города или достопримечательности:</label>
+            <input type="text" id="query" name="query" required>
+            <ul id="searchResults"></ul>
+        </form>
+        
+        <div id="infoSection">
+            <h2>Добро пожаловать!</h2>
+            <p>Найдите интересные достопримечательности в различных городах России. Пользуйтесь поиском для поиска мест и получения дополнительной информации.</p>
+            <h3>Самые популярные города:</h3>
+            <ul>
+                <li>Москва</li>
+                <li>Санкт-Петербург</li>
+                <li>Казань</li>
+                <li>Сочи</li>
+                <li>Екатеринбург</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

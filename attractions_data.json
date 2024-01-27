@@ -1,0 +1,39 @@
+{
+    "attractions": {
+        "Москва": {
+            "Красная площадь": {
+                "description": "Историческая площадь в центре Москвы и одна из самых известных площадей в мире.",
+                "photo": "https://example.com/link_to_photo1.jpg"
+            },
+            "Кремль": {
+                "description": "Историческая крепость в центре Москвы.",
+                "photo": "https://example.com/link_to_photo2.jpg"
+            }
+        },
+        "Санкт-Петербург": {
+            "Эрмитаж": {
+                "description": "Один из крупнейших музеев мира.",
+                "photo": "https://example.com/link_to_photo4.jpg"
+            },
+            "Петропавловская крепость": {
+                "description": "Крепость в центре Санкт-Петербурга.",
+                "photo": "https://example.com/link_to_photo5.jpg"
+            }
+        },
+        "Нью-Йорк": {
+            "Статуя Свободы": {
+                "description": "Известный американский памятник в порту Нью-Йорка.",
+                "photo": "https://example.com/link_to_photo7.jpg"
+            },
+            "Эмпайр-стейт-билдинг": {
+                "description": "Один из символов Нью-Йорка.",
+                "photo": "https://example.com/link_to_photo8.jpg"
+            }
+        }
+    },
+    "cities": [
+        "Москва",
+        "Санкт-Петербург",
+        "Нью-Йорк"
+    ]
+}
