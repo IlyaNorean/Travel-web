@@ -3,37 +3,100 @@
         "Москва": {
             "Красная площадь": {
                 "description": "Историческая площадь в центре Москвы и одна из самых известных площадей в мире.",
-                "photo": "https://example.com/link_to_photo1.jpg"
+                "photo": "https://via.placeholder.com/800x400?text=Red+Square"
             },
             "Кремль": {
                 "description": "Историческая крепость в центре Москвы.",
-                "photo": "https://example.com/link_to_photo2.jpg"
+                "photo": "https://via.placeholder.com/800x400?text=Kremlin"
+            },
+            "Храм Христа Спасителя": {
+                "description": "Крупнейший православный храм в мире, расположенный в Москве.",
+                "photo": "https://via.placeholder.com/800x400?text=Christ+the+Savior+Cathedral"
             }
         },
         "Санкт-Петербург": {
             "Эрмитаж": {
                 "description": "Один из крупнейших музеев мира.",
-                "photo": "https://example.com/link_to_photo4.jpg"
+                "photo": "https://via.placeholder.com/800x400?text=Hermitage"
             },
             "Петропавловская крепость": {
                 "description": "Крепость в центре Санкт-Петербурга.",
-                "photo": "https://example.com/link_to_photo5.jpg"
+                "photo": "https://via.placeholder.com/800x400?text=Peter+and+Paul+Fortress"
+            },
+            "Дворцовая площадь": {
+                "description": "Один из центральных архитектурных ансамблей города.",
+                "photo": "https://via.placeholder.com/800x400?text=Palace+Square"
             }
         },
-        "Нью-Йорк": {
-            "Статуя Свободы": {
-                "description": "Известный американский памятник в порту Нью-Йорка.",
-                "photo": "https://example.com/link_to_photo7.jpg"
+        "Казань": {
+            "Казанский Кремль": {
+                "description": "Исторический и архитектурный комплекс в центре Казани.",
+                "photo": "https://via.placeholder.com/800x400?text=Kazan+Kremlin"
             },
-            "Эмпайр-стейт-билдинг": {
-                "description": "Один из символов Нью-Йорка.",
-                "photo": "https://example.com/link_to_photo8.jpg"
+            "Кул-Шариф": {
+                "description": "Современная мечеть, символ Казани.",
+                "photo": "https://via.placeholder.com/800x400?text=Kul-Sharif"
+            }
+        },
+        "Сочи": {
+            "Олимпийский парк": {
+                "description": "Парк, созданный для Зимних Олимпийских игр 2014 года.",
+                "photo": "https://via.placeholder.com/800x400?text=Olympic+Park"
+            },
+            "Роза Хутор": {
+                "description": "Горнолыжный курорт в Сочи.",
+                "photo": "https://via.placeholder.com/800x400?text=Rosa+Khutor"
+            }
+        },
+        "Екатеринбург": {
+            "Храм на Крови": {
+                "description": "Памятник, сооруженный на месте убийства царской семьи.",
+                "photo": "https://via.placeholder.com/800x400?text=Church+on+Blood"
+            },
+            "Ганина яма": {
+                "description": "Место захоронения останков императорской семьи.",
+                "photo": "https://via.placeholder.com/800x400?text=Ganina+Pit"
+            }
+        },
+        "Нижний Новгород": {
+            "Нижегородский кремль": {
+                "description": "Исторический комплекс в центре Нижнего Новгорода.",
+                "photo": "https://via.placeholder.com/800x400?text=Nizhny+Novgorod+Kremlin"
+            },
+            "Чкаловская лестница": {
+                "description": "Одна из самых крутых лестниц в мире.",
+                "photo": "https://via.placeholder.com/800x400?text=Chkalov+Stairs"
+            }
+        },
+        "Владивосток": {
+            "Золотой мост": {
+                "description": "Мост через бухту Золотой Рог во Владивостоке.",
+                "photo": "https://via.placeholder.com/800x400?text=Golden+Bridge"
+            },
+            "Тигренок и Львенок": {
+                "description": "Памятники тигренку и львенку в центре города.",
+                "photo": "https://via.placeholder.com/800x400?text=Tiger+Cub+and+Lion+Cub"
+            }
+        },
+        "Краснодар": {
+            "Красная площадь": {
+                "description": "Центральная площадь в Краснодаре.",
+                "photo": "https://via.placeholder.com/800x400?text=Krasnaya+Ploshchad"
+            },
+            "Парк Красной Площади": {
+                "description": "Популярный парк с аттракционами.",
+                "photo": "https://via.placeholder.com/800x400?text=Krasnaya+Ploshchad+Park"
             }
         }
     },
     "cities": [
         "Москва",
         "Санкт-Петербург",
-        "Нью-Йорк"
+        "Казань",
+        "Сочи",
+        "Екатеринбург",
+        "Нижний Новгород",
+        "Владивосток",
+        "Краснодар"
     ]
 }

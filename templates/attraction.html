@@ -12,16 +12,7 @@
     
     <div id="attractionInfo">
         <p>{{ attraction_info.description }}</p>
-        
-        {% if attraction_info.photos %}
-            <h3>Фотографии:</h3>
-            <ul>
-                {% for photo in attraction_info.photos %}
-                    <li><img src="{{ photo }}" alt="Фото"></li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-
+        <img src="{{ attraction_info.photo}}" alt="{{ attraction_name }}">
     </div>
     <a href="/">Вернуться к поиску</a>
 </body>

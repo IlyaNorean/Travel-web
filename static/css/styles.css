@@ -20,6 +20,19 @@ p {
 }
 
 /* Стили для формы поиска */
+#searchForm {
+    position: relative;
+    
+}
+
+#query {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
 #searchResults {
     position: absolute;
     z-index: 1;
@@ -31,6 +44,9 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-height: 200px;
     overflow-y: auto;
+    width: 100%;
+    display: none;
+    border-top: none;
 }
 
 #searchResults li {
@@ -47,4 +63,7 @@ p {
     margin-top: 30px;
 }
 
-/* Дополнительные стили можно добавить по мере необходимости */
+.mb-4 {
+    text-align: center;
+    font-weight: bold;
+}

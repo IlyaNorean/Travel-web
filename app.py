@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import json
 
+
 app = Flask(__name__, static_folder='static')
 
 
@@ -17,7 +18,7 @@ def search_query_in_string(query, string):
 
 @app.route('/')
 def index():
-    return render_template('index_new.html', cities=cities_data)
+    return render_template('index.html', cities=cities_data)
 
 @app.route('/search', methods=['POST'])
 def search():
