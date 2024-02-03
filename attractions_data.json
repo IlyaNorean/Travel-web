@@ -1,26 +1,34 @@
 {
     "attractions": {
-        "Москве": {
+        "Москва": {
             "Красная площадь": {
                 "description": "Историческая площадь в центре Москвы и одна из самых известных площадей в мире.",
-                "photo": "https://via.placeholder.com/800x400?text=Red+Square",
+                "photo_1": "https://via.placeholder.com/800x400?text=Red+Square+1",
+                "photo_2": "https://via.placeholder.com/800x400?text=Red+Square+2",
+                "photo_3": "https://via.placeholder.com/800x400?text=Red+Square+3",
                 "map": "https://yandex.ru/map-widget/v1/?um=constructor%3A8002c8555821804a509de993e8c91be07d563409b7a8cbb2c8b1ceb8a30dfc39&amp;source=constructor"
             },
             "Кремль": {
                 "description": "Историческая крепость в центре Москвы.",
-                "photo": "https://via.placeholder.com/800x400?text=Kremlin",
+                "photo_1": "https://via.placeholder.com/800x400?text=Kremlin+1",
+                "photo_2": "https://via.placeholder.com/800x400?text=Kremlin+2",
+                "photo_3": "https://via.placeholder.com/800x400?text=Kremlin+3",
                 "map": ""
             }
         },
-        "Санкт-Петербурге": {
+        "Санкт-Петербург": {
             "Эрмитаж": {
                 "description": "Один из крупнейших музеев мира.",
-                "photo": "https://via.placeholder.com/800x400?text=Hermitage",
+                "photo_1": "https://via.placeholder.com/800x400?text=Hermitage+1",
+                "photo_2": "https://via.placeholder.com/800x400?text=Hermitage+2",
+                "photo_3": "https://via.placeholder.com/800x400?text=Hermitage+3",
                 "map": ""
             },
             "Петропавловская крепость": {
                 "description": "Крепость в центре Санкт-Петербурга.",
-                "photo": "https://via.placeholder.com/800x400?text=Peter+and+Paul+Fortress",
+                "photo_1": "https://via.placeholder.com/800x400?text=Peter+and+Paul+Fortress+1",
+                "photo_2": "https://via.placeholder.com/800x400?text=Peter+and+Paul+Fortress+2",
+                "photo_3": "https://via.placeholder.com/800x400?text=Peter+and+Paul+Fortress+3",
                 "map": ""
             }
         }
