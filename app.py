@@ -6,12 +6,12 @@ app = Flask(__name__, static_folder='static')
 
 
 # Чтение данных о достопримечательностях и городах из файла JSON
-with open('attractions_data.json', 'r', encoding='utf-8') as file:
+with open(r'attractions_data.json', 'r') as file:
     data = json.load(file)
 
 # Разделение данных на отдельные словари для достопримечательностей и городов
-attractions_data = data.get('attractions', {}).decode("utf-8")
-cities_data = data.get('cities', {}).decode("utf-8")
+attractions_data = data.get('attractions', {})
+cities_data = data.get('cities', {})
 
 def search_query_in_string(query, string):
     return query.lower() in string.lower()
