@@ -6,7 +6,7 @@ app = Flask(__name__, static_folder='static')
 
 
 # Чтение данных о достопримечательностях и городах из файла JSON
-with open('attractions_data.json', 'r') as file:
+with open('attractions_data.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 # Разделение данных на отдельные словари для достопримечательностей и городов
