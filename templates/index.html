@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поиск достопримечательностей</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
+    
     <div class="container mt-5">
-        <h1 class="mb-4">Поиск достопримечательностей</h1>
-        <form id="searchForm">
+       
+        <h1 class="mb-4 text-center">Поиск достопримечательностей</h1>
+        <form id="searchForm" class="mb-4">
             <div class="form-group">
                 <input type="text" id="query" name="query" class="form-control" placeholder="Введите название города или достопримечательности" required>
             </div>
             <div id="searchResults" class="list-group"></div>
         </form>
 
-        <div class="mt-5">
+        <div class="mt-5 text-center">
             <h2>Добро пожаловать!</h2>
             <p>Найдите интересные достопримечательности в различных городах России. Пользуйтесь поиском для поиска мест и получения дополнительной информации.</p>
             <h3>Самые популярные города:</h3>
@@ -32,48 +34,6 @@
         </div>
     </div>
 
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
 </body>
-<script>
-    $(document).ready(function () {
-        $('#query').on('input', function () {
-            var query = $(this).val().toLowerCase();
-            $.ajax({
-                type: 'POST',
-                url: '/search',
-                data: { query: query },
-                success: function (data) {
-                    var resultsHtml = '';
-                    if (data.length > 0) {
-                        for (var i = 0; i < data.length; i++) {
-                            if (data[i].type === 'attraction') {
-                                resultsHtml += '<a class="list-group-item list-group-item-action attractionResult" data-city="' + data[i].city + '" data-attraction="' + data[i].attraction + '">' +
-                                    data[i].attraction + ' в ' + data[i].city + '</a>';
-                            }
-                        }
-                    } else {
-                        resultsHtml += '<a class="list-group-item list-group-item-action disabled">Ничего не найдено.</a>';
-                    }
-                    $('#searchResults').html(resultsHtml).show();
-                }
-            });
-        });
-
-        $('#searchForm').submit(function (e) {
-            e.preventDefault();
-        });
-
-        $('#searchResults').on('click', '.attractionResult', function () {
-            var city = $(this).data('city');
-            var attraction = $(this).data('attraction');
-            window.location.href = '/attraction/' + city + '/' + attraction;
-        });
-
-        // Закрытие результатов поиска при клике за пределами формы
-        $(document).on('click', function (e) {
-            if ($(e.target).closest("#searchResults, #query").length === 0) {
-                $('#searchResults').hide();
-            }
-        });
-    });
-</script>
 </html>

@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* light gray background */
+    padding: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h1 {
+    color: #343a40; /* dark text color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#attractionInfo {
+    margin-bottom: 30px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px; /* Adjust the height based on your preference */
+    object-fit: cover;
+}
+
+#carouselExampleIndicators {
+    margin-bottom: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px; /* Adjust the height based on your preference */
+    border: 0;
+    border-radius: 8px;
+}
+
+a {
+    color: #007bff; /* link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3; /* link color on hover */
+}
+
+/* Custom button style */
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .carousel-inner img,
+    iframe {
+        height: 250px;
+    }
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+#attractionInfo {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007bff;
+}
+
+#carouselExampleIndicators {
+    margin-top: 20px;
+}
+
+#mapContainer {
+    margin-top: 20px;
+}
+
+a {
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
