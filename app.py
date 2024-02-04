@@ -43,4 +43,4 @@ def attraction(city, attraction_name):
     return render_template('attraction.html', city=city, attraction_name=attraction_name, attraction_info=attraction_info)
 
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0')
+    app.run(debug=False)
