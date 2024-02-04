@@ -10,8 +10,8 @@ with open('attractions_data.json', 'r') as file:
     data = json.load(file)
 
 # Разделение данных на отдельные словари для достопримечательностей и городов
-attractions_data = data.get('attractions', {})
-cities_data = data.get('cities', {})
+attractions_data = data.get('attractions', {}).decode("utf-8")
+cities_data = data.get('cities', {}).decode("utf-8")
 
 def search_query_in_string(query, string):
     return query.lower() in string.lower()
